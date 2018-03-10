@@ -1,0 +1,22 @@
+Before 11:
+1. Finish UI Photoshop
+2. Add mouse-events to trigger pan between screens
+3. Get 3D image render from Java 
+
+11-12:
+1. Work on pitch
+
+12-5:
+1. Get RPi RFiD input
+2. Make RFiD open UI
+
+5-6:
+Take a break :)
+
+6-8:
+1. Work on presentation
+
+8-10: Add-ons
+1. Predictive data analytics
+2. Add "facetime"
+
