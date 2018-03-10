@@ -1,0 +1,25 @@
+Process flow of getting something fixed. 
+ARKit
+OBD Connector
+Virtual mechanic
+	- early stage diagnostic remotely
+bluetooth beacon replacing tag
+Text-to-speech on diagnostic warns workers of broken machinery
+
+Have a database with everything
+	- tag number
+
+Eliminate incorrect asset identification with the descriptions from virtual mechanic
+
+Standard operating procedures
+	- saved instructions on iPad
+	Problem Identified->Virtual Mechanic->Sent to Maintenance Guy as a "Job"->Maintenance guy goes to site with access to SOP
+
+
+What are haul trucks using to communicate data in the mine?
+Power for bluetooth beacon?
+UG Mining Communication
+
+
+iPad Diagnostic
+

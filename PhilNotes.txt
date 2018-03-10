@@ -1,0 +1,45 @@
+2. 
+
+4. Process plants
+- underground mines
+- darky, wet, difficult environment for working
+- lots of dust, fumes, diesel
+- lighting is shitty
+- equipment has lights
+- processing plants
+	- super loud, hearing protection
+	- dangerous place
+		- drone? 
+	- complex machines that break often because environment
+	- broken
+		- dude found it broken don't use it, tell others not to
+		- tag it, tell maintenance to fix it
+		- guards and barriers that people need to stay out of
+			- makes AR good
+		- HAS to be fullproof. People can die in mines so has to be safe. 
+		- Make it idiotproof
+Automatic identification step
+	- predictive analytics	
+
+Advantage underground vs above ground mine? Where are they going
+	- surface mine
+		- haul trucks, little red tag on steering wheel
+
+Solution has to work in all environments
+
+ Value Proposition: Mines are slow, things aren't efficient. Lock the truck, call maintanenace, takes two hours before order for a part. 
+
+automated and link together systems
+
+$20k an hour, down for 8 hours, damn. 
+
+Haul trucks have computers on them. 
+
+Real-time diagnostics.
+
+Most mines sites have wifi capabilities. 
+
+ASK experts about underground wifi
+
+Clear on product, solution, and expansion 
+
