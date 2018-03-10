@@ -1,11 +1,18 @@
 #bash src/run.sh
+javaUI='DashboardUI'
 
-while true; do
+rm sensor.txt
+close=true
+while ${close}; do
 	echo "Searching for data..."
 	if [ -a "sensor.txt" ]
 	then
 		echo "Data received, running UI."
+		close=false 
 	fi	
 	sleep 2
 done
+
+javac ${javaUI}.java
+java ${javaUI}
 
