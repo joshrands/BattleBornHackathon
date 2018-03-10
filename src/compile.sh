@@ -1,0 +1,4 @@
+src='./'
+
+javac Test.java
+
