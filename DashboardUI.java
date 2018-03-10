@@ -85,7 +85,7 @@ public class DashboardUI extends Canvas implements Runnable, MouseMotionListener
         
         
         
-        win.setSize(screenSize.getWidth(), screenSize.getHeight());
+        win.setSize(int(screenSize.getWidth()), int(screenSize.getHeight()));
         
         //new instance of mazeRunner
         DashboardUI ui = new DashboardUI();
