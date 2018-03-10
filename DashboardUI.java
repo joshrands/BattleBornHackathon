@@ -80,7 +80,12 @@ public class DashboardUI extends Canvas implements Runnable, MouseMotionListener
         //new JFrame
         JFrame win = new JFrame("Barricks Dashboard");
         win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        win.setSize(2560, 1600);
+        
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        
+        
+        
+        win.setSize(screenSize.getWidth(), screenSize.getHeight());
         
         //new instance of mazeRunner
         DashboardUI ui = new DashboardUI();
