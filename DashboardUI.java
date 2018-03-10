@@ -13,88 +13,83 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Timer;
 
-public class DashboardUI extends Canvas implements Runnable, MouseMotionListener, MouseListener {
-
-	private Thread thread;
-	private BufferStrategy bs;
-	private Graphics g;
-
-	private int moveRectStartX;
-	private int moveRectStartY;
-
-	private int moveRectLengthX;
-	private int moveRectLengthY;
-	
-	boolean running;
-	
-	Rectangle2D test;
-		
-	private BufferedImage DashUI;
-
-	public DashboardUI() {
-		addMouseMotionListener(this);
+public class DashboardUI extends Canvas implements Runnable, MouseListener {
+    
+    private Thread thread;
+    private BufferStrategy bs;
+    private Graphics g;
+    
+    private int moveRectStartX;
+    private int moveRectStartY;
+    
+    private int moveRectLengthX;
+    private int moveRectLengthY;
+    
+    boolean running;
+    
+    private int screen;
+    
+    private BufferedImage DashUI;
+    
+    public DashboardUI() {
+        //addMouseMotionListener(this);
         addMouseListener(this);
         
         try {
-			DashUI = ImageIO.read(new File ("Dashboard.png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+            DashUI = ImageIO.read(new File ("Dashboard.png"));
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         
         running = false;
         
-		test = new Rectangle2D.Double(418,412,189,50);
-	}
-	
-	public void render() {    		
-		//this is some bs...
-		//hahahaha get it
-		//because Camden said I should name it bs
-		//ya know, Buffer Strategy...
-		bs = this.getBufferStrategy();
-		if(bs == null) {
-			this.createBufferStrategy(3);
-			return;
-		}
-		g = bs.getDrawGraphics();
-		g.clearRect(0,0,getWidth(),getHeight());
-		//I guess that just ran the program in the window constantly
-
-		//cast g2 to be 2D Graphics for shapes
-		Graphics2D g2 = (Graphics2D)g;
-
-		//paint the background
-		g.setColor(Color.black);
-		g2.draw(test);
-		
-		g.drawImage(DashUI, 0, 0, getWidth(), getHeight(), null);
-		
-		
-		//cam cam said so, I guess wipe the screen?
+        screen = 0;
+    }
+    
+    public void render() {
+        //this is some bs...
+        //hahahaha get it
+        //because Camden said I should name it bs
+        //ya know, Buffer Strategy...
+        bs = this.getBufferStrategy();
+        if(bs == null) {
+            this.createBufferStrategy(3);
+            return;
+        }
+        g = bs.getDrawGraphics();
+        g.clearRect(0,0,getWidth(),getHeight());
+        //I guess that just ran the program in the window constantly
+        
+        //cast g2 to be 2D Graphics for shapes
+        Graphics2D g2 = (Graphics2D)g;
+        
+        //paint the background
+        g.setColor(Color.black);
+        //g2.draw(test);
+        if (screen == 0) {
+            //g.drawImage(DashUI, 0, 0, getWidth(), getHeight(), null);
+        } else if (screen == 1) {
+            
+        }
+        
+        
+        //cam cam said so, I guess wipe the screen?
         bs.show();
         g.dispose();
-	}
-	
-	public static void main(String[] args) {
+    }
+    
+    public static void main(String[] args) {
         //new JFrame
         JFrame win = new JFrame("Barricks Dashboard");
         win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        
-        // the screen height
-        //screenSize.getHeight();
-        
-        // the screen width
-        //screenSize.getWidth();
-        
-        win.setSize(screenSize.width, screenSize.height);
+        win.setSize(768, 1024);
         
         //new instance of mazeRunner
         DashboardUI ui = new DashboardUI();
         //black background
-        ui.setBackground(Color.WHITE);
+        ui.setBackground(Color.BLACK);
         
         //add the instance
         win.add(ui);
@@ -103,7 +98,7 @@ public class DashboardUI extends Canvas implements Runnable, MouseMotionListener
         //run it
         ui.start();
     }
-
+    
     //this is an implemented runnable that is constantly running
     public void run() {
         while(running) {
@@ -133,46 +128,35 @@ public class DashboardUI extends Canvas implements Runnable, MouseMotionListener
             ex.printStackTrace();
         }
     }
-
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseEntered(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseExited(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseDragged(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseMoved(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+    
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+    }
+    
+    @Override
+    public void mousePressed(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+    }
+    
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+    }
+    
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+    }
+    
+    @Override
+    public void mouseExited(MouseEvent e) {
+        // TODO Auto-generated method stub
+        
+    }
 }
+
