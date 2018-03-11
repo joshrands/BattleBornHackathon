@@ -4,14 +4,14 @@
 touch install.txt
 rm install.txt # install.txt tells GUI that we are installing
 
-install=false
-while ${install} -e false
+waiting=true
+while ${waiting}
 do
 	echo "Please attach BridgeBox..."
 	if [ -a "install.txt" ]
 	then
 		echo "BridgeBox attached, enter Asset iD:"
-		install = true
+		waiting=true
 	fi
 	sleep 1
 done
