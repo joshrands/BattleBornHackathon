@@ -5,7 +5,7 @@ touch install.txt
 rm install.txt # install.txt tells GUI that we are installing
 
 install=false
-while [install -e false]
+while ${install} -e false
 do
 	echo "Please attach BridgeBox..."
 	if [ -a "install.txt" ]
@@ -21,9 +21,11 @@ javac ${installUI}.java
 java ${installUI}
 
 # TODO: Maybe add a condition for completing installation here.
-
+while true;
+do
+sleep 1
+done 
 # open java install page
-
 
 # Field Demo
 javaUI='DashboardUI'
