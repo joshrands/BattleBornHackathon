@@ -32,7 +32,7 @@ public class InstallUI extends Canvas implements Runnable, MouseListener {
         addMouseListener(this);
         
         try {
-            SetupUI = ImageIO.read(new File ("UI.png"));
+            SetupUI = ImageIO.read(new File ("SetupUI.png"));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
