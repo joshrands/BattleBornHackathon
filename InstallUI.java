@@ -87,7 +87,7 @@ public class InstallUI extends Canvas implements Runnable, MouseListener {
         
         JTextField id = new JTextField(1);
         
-        id.setBounds(68 / 2 - 2, 719 / 2 - 8.5, 1891 / 2 - 100.5, 115 / 2 + 0.5);
+        id.setBounds(34 - 2, 360 - 8, 945 + 100, 58);
         
         win.add(id);
         
