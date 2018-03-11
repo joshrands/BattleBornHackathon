@@ -142,6 +142,8 @@ public class DashboardUI extends Canvas implements Runnable, MouseListener {
 		try {
 			PrintWriter out = new PrintWriter("workOrder.txt");
 			out.println("Work order 1");
+			System.out.println("Data written.");
+			out.close();
 		} catch(FileNotFoundException ex) {
 			System.out.println(ex);
 		}
