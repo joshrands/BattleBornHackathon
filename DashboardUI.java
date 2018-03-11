@@ -97,6 +97,9 @@ public class DashboardUI extends Canvas implements Runnable, MouseListener {
 		win.setSize(1024, 768);
 		win.setResizable(false);
 
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        win.setLocation(dim.width/2-win.getSize().width/2, dim.height/2-win.getSize().height/2);
+        
 		//new instance of mazeRunner
 		DashboardUI ui = new DashboardUI();
 		//black background
