@@ -22,10 +22,10 @@ javac ${installUI}.java
 java ${installUI}
 
 # TODO: Maybe add a condition for completing installation here.
-while true;
-do
-sleep 1
-done 
+#while true;
+#do
+#sleep 1
+#done 
 # open java install page
 
 # Field Demo
