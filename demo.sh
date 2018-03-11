@@ -11,7 +11,7 @@ do
 	if [ -a "install.txt" ]
 	then
 		echo "BridgeBox attached, enter Asset iD:"
-		waiting=true
+		waiting=false
 	fi
 	sleep 1
 done
