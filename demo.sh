@@ -2,6 +2,10 @@
 javaUI='DashboardUI'
 
 rm sensor.txt
+# rm complete.txt
+# rm delay.txt
+# rm workOrder.txt
+
 close=true
 while ${close}; do
 	echo "Searching for data..."

@@ -44,7 +44,7 @@ public class DashboardUI extends Canvas implements Runnable, MouseListener {
         
         running = false;
         
-        screen = 0;
+        screen = 1;
     }
     
     public void render() {
@@ -132,7 +132,17 @@ public class DashboardUI extends Canvas implements Runnable, MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         // TODO Auto-generated method stub
-        
+	if (screen == 0) {
+		// setup screen
+	} else if (screen == 1) {
+		// this is the moron dashboard  
+		// send workOrder.txt to raspberry pi
+		System.out.println("Sending work order to Oracle database..."); 
+	} else if (screen == 2) {
+		// "Other" W.O. option pulls up forge app
+	} else if (screen == 3) {
+		// Maintenance guy screen
+	}  
     }
     
     @Override
