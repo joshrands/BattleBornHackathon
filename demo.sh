@@ -2,7 +2,8 @@
 javaUI='DashboardUI'
 
 rm sensor.txt
-# rm complete.txt
+rm complete.txt
+touch complete.txt
 # rm delay.txt
 rm workOrder.txt
 touch workOrder.txt
