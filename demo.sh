@@ -1,8 +1,9 @@
 #bash src/run.sh
 
 # Installation Demo
-touch install.txt
 rm install.txt # install.txt tells GUI that we are installing
+rm oracle.txt
+touch oracle.txt
 
 waiting=true
 while ${waiting}
