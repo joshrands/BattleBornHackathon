@@ -84,11 +84,11 @@ public class InstallUI extends Canvas implements Runnable, MouseListener {
         InstallUI ui = new InstallUI();
         //black background
         ui.setBackground(Color.BLACK);
-        
+        Font f1 = new Font("Helvetica", Font.BOLD, 30);
         JTextField id = new JTextField(1);
         
-        id.setBounds(34 - 2, 360 - 8, 945 + 100, 58);
-        
+        id.setBounds(34, 351, 865, 55);
+        id.setFont(f1);
         win.add(id);
         
         //add the instance

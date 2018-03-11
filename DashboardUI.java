@@ -194,11 +194,7 @@ public class DashboardUI extends Canvas implements Runnable, MouseListener {
 				} catch(FileNotFoundException ex) {
 					System.out.println(ex);
 				}
-				if (screen == 8) {
-					screen = 2;
-				} else {
-					screen = 3;
-				}
+				System.exit(0);
 			}
 		} else if (screen == 2) {
 			// "Other" W.O. option pulls up forge app and eventually does the submit from above
