@@ -4,7 +4,8 @@ javaUI='DashboardUI'
 rm sensor.txt
 # rm complete.txt
 # rm delay.txt
-# rm workOrder.txt
+rm workOrder.txt
+touch workOrder.txt
 
 close=true
 while ${close}; do
