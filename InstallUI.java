@@ -32,7 +32,7 @@ public class InstallUI extends Canvas implements Runnable, MouseListener {
         addMouseListener(this);
         
         try {
-            SetupUI = ImageIO.read(new File ("SetupUI.png"));
+            SetupUI = ImageIO.read(new File ("Setup.png"));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -81,13 +81,13 @@ public class InstallUI extends Canvas implements Runnable, MouseListener {
         win.setResizable(false);
         
         //new instance of mazeRunner
-        DashboardUI ui = new DashboardUI();
+        InstallUI ui = new InstallUI();
         //black background
         ui.setBackground(Color.BLACK);
         
         JTextField id = new JTextField(1);
         
-        id.setBounds(68 / 2, 719 / 2, 1891 / 2, 115 / 2);
+        id.setBounds(68 / 2 - 2, 719 / 2 - 8.5, 1891 / 2 - 100.5, 115 / 2 + 0.5);
         
         win.add(id);
         
