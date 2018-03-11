@@ -1,7 +1,9 @@
 #bash src/run.sh
 
 # Installation Demo
+touch install.txt
 rm install.txt # install.txt tells GUI that we are installing
+
 install=false
 while [install -e false]
 do
