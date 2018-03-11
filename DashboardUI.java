@@ -1,4 +1,4 @@
-
+import java.io.*;
 import java.awt.*;
 
 import javax.imageio.ImageIO;
@@ -84,7 +84,7 @@ public class DashboardUI extends Canvas implements Runnable, MouseListener {
         JFrame win = new JFrame("Barricks Dashboard");
         win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        win.setSize(768, 1024);
+        win.setSize(2048, 1536);
         
         //new instance of mazeRunner
         DashboardUI ui = new DashboardUI();
@@ -138,6 +138,32 @@ public class DashboardUI extends Canvas implements Runnable, MouseListener {
 		// this is the moron dashboard  
 		// send workOrder.txt to raspberry pi
 		System.out.println("Sending work order to Oracle database..."); 
+		
+		try {
+			PrintWriter out = new PrintWriter("workOrder.txt");
+			out.println("Work order 1");
+		} catch(FileNotFoundException ex) {
+			System.out.println(ex);
+		}
+
+		/*	
+		try {	
+			Process proc = Runtime.getRuntime().exec("./work-order.sh");
+			proc.waitFor();
+		} catch(IOException ex) {
+			System.out.println(ex);
+		} catch(InterruptedException ie) {
+			System.out.println(ie);
+		}
+		ProcessBuilder pb = new ProcessBuilder("ls");
+		pb.inheritIO();
+		pb.directory(new File("bin"));
+		try {
+			pb.start();
+		} catch(IOException ex) {
+			System.out.println(ex);
+		}
+		*/
 	} else if (screen == 2) {
 		// "Other" W.O. option pulls up forge app
 	} else if (screen == 3) {
